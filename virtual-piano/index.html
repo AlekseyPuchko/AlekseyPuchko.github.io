@@ -4,9 +4,51 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Virtual-piano</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        TEST paino
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd> <span class="sound">note DO</span>
+            </div>
+
+            <div data-key="83" class="key">
+                <kbd>S</kbd> <span class="sound">note RE</span>
+            </div>
+
+            <div data-key="68" class="key">
+                <kbd>D</kbd> <span class="sound">note MI</span>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>F</kbd> <span class="sound">note FA</span>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>G</kbd> <span class="sound">note SOL</span>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>H</kbd> <span class="sound">note LA</span>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>J</kbd> <span class="sound">note SI</span>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>K</kbd> <span class="sound">note DO</span>
+            </div>
+        </div>
+
+        <audio data-key="65" src="/virtual-piano/sound/do.mp3"></audio>
+        <audio data-key="83" src="/virtual-piano/sound/re.mp3"></audio>
+        <audio data-key="68" src="/virtual-piano/sound/mi.mp3"></audio>
+        <audio data-key="70" src="/virtual-piano/sound/fa.mp3"></audio>
+        <audio data-key="71" src="/virtual-piano/sound/sol.mp3"></audio>
+        <audio data-key="72" src="/virtual-piano/sound/lja.mp3"></audio>
+        <audio data-key="74" src="/virtual-piano/sound/si.mp3"></audio>
+        <audio data-key="75" src="/virtual-piano/sound/do.mp3"></audio>
     </body>
+    <script>
+        window.addEventListener("keydown", function (event) {
+            console.log(event);
+        });
+    </script>
 </html>
