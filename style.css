@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     max-width: 1024px;
     background-color: #7aff0033;
-    border: 1px solid #4d6d36;
+    border: 1px solid #111111;
     border-radius: 6px;
     opacity: 1;
     margin-left: auto;
@@ -20,6 +20,23 @@ h3.main-title {
     margin-right: auto;
     width: 14em;
 }
-h1 {
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact_icon {
+    flex: 0 1 auto;
+    padding: 0.5rem;
+}
+.email {
     text-align: center;
+}
+a {
+    text-decoration: none;
 }
